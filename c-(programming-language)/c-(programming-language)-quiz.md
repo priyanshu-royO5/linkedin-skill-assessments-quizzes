@@ -133,7 +133,7 @@ struct s {
 
 - [ ] The preprocessor will try to locate fileA in the same directory as the source file, and the fileB in a predetermined directory path.
 - [ ] The preprocessor will try to locate fileA in the fixed system directory. It will try to locate fileB in the directory path designated by the -I option added to the command line while compiling the source code.
-- [ ] The file using the fileA syntax must be system file, of unlimited number; fileB must be a user file at a maximum of one per source file.
+- [ ] The file using the fileA syntax must be a system file, of an  unlimited number; fileB must be a user file at a maximum of one per source file.
 - [x] The preprocessor will try to locate fileA in a predetermined directory path. It will try to locate fileB in the same directory as the source file along with a custom directory path.
 
 [Reference](https://www.geeksforgeeks.org/difference-between-include-and-include-in-c-c-with-examples/#:~:text=The%20difference%20between%20the%20two,be%20included%20in%20the%20code.&text=%23include%20is%20for%20pre%2Ddefined%20header%20files.)
