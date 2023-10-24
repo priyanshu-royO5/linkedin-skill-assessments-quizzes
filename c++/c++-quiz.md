@@ -59,10 +59,10 @@ v2.push_back(5);
 
 #### Q5. Which of the following is a true statement about the difference between pointers and iterators?
 
-- [ ] While pointers are variable that hold memory address, iterators are generic functions used to traverse containers. These function allows the programmer to implement read and write code as the container is traversed.
-- [x] Incrementing an iterator always means access the next element in the container(if any), no matter the container. Incrementing the pointer means pointing to the next element in memory, not always the next element.
-- [ ] Pointers are variables that hold memory address where as iterator are unsigned integers that refers to offsets in arrays.
-- [ ] All iterator are implemented with pointers so all iterators are pointers but not all pointers are iterators.
+- [ ] While pointers are variables that hold memory addresses, iterators are generic functions used to traverse containers. This function allows the programmer to implement read and write code as the container is traversed.
+- [x] Incrementing an iterator always means accessing the next element in the container(if any), no matter the container. Incrementing the pointer means pointing to the next element in memory, not always the next element.
+- [ ] Pointers are variables that hold memory address whereas iterator is unsigned integers that refers to offsets in arrays.
+- [ ] All iterators are implemented with pointers so all iterators are pointers but not all pointers are iterators.
 
 [Reference](https://stackoverflow.com/a/31128162)
 
@@ -181,7 +181,7 @@ auto x = 4000.22;
 ```
 
 - [x] It specifies that the type of x will be deduced from the initializer - in this case, double.
-- [ ] It specifies that the type of x is automatic meaning that if can be assigned different types of data throughout the program.
+- [ ] It specifies that the type of x is automatic meaning that it can be assigned different types of data throughout the program.
 - [ ] It specifies that x is a variable with automatic storage duration.
 - [ ] It specifies that more memory will be allocated for x in case it needs more space, avoiding loss of data due to overflow.
 
@@ -189,7 +189,7 @@ auto x = 4000.22;
 
 - [x] class written with the generic programming paradigm, specifying behavior in terms of type parameter rather than specific type.
 - [ ] blank superclass intended for inheritance and polymorphism.
-- [ ] class that only consists of member variable, with no constructor, destructor nor member functions.
+- [ ] class that only consists of a member variable, with no constructor, destructor, or member functions.
 - [ ] skeleton source code for a class where the programmer has to fill in specific parts to define the data types and algorithms used.
 
 [Reference](https://www.mygreatlearning.com/blog/templates-in-cpp/)
@@ -451,8 +451,8 @@ void *ptr=&g;
 #### Q31. What is the `.*` operator and what does it do?
 
 - [ ] It is the same as the class member access operator, or arrow operator `(->)`, which allows you to access a member of an object through a pointer to the object.
-- [x] It is the pointer to member operator, and it allows you to access a member of an object through a pointer to that specific class member.
-- [ ] It is the member access with address of operator, which returns the address of a class or struct member.
+- [x] It is the pointer to the member operator, and it allows you to access a member of an object through a pointer to that specific class member.
+- [ ] It is the member access with the address of the operator, which returns the address of a class or struct member.
 - [ ] It is a combination of the member access operator `(.)` and the dereference operator `(*)`, so it allows you to access the object that a member pointer points to.
 
 [Reference](https://en.cppreference.com/w/cpp/language/operator_member_access)
@@ -669,9 +669,9 @@ loop:
 ```
 
 - [ ] It causes the toolchain to compile all the contents of library.h so that its executable code is available when needed by the final application.
-- [ ] It cherry picks library.h for the declarations and definitions of all data and functions used in the remainder of the source file main.cpp, finally replacing the `#include` directive by those declarations and definitions.
+- [ ] It cherry-picks library.h for the declarations and definitions of all data and functions used in the remainder of the source file main.cpp, finally replacing the `#include` directive with those declarations and definitions.
 - [ ] It informs the linker that some functions or data used in the source file main.cpp are contained in library.h, so that they can be called in run time. This is also known as dynamic linking.
-- [x] It causes the replacement of the `#include` directive by the entire contents of the source file library.h. This is similar to a Copy-Paste operation of library.h into main.cpp.
+- [x] It causes the replacement of the `#include` directive by the entire contents of the source file library.h. This is similar to the Copy-Paste operation of library.h into main.cpp.
 
 #### Q39. Consider this function declaration of `is_even`, which takes in an integer and returns true if the argument is an even number and false otherwise. Which declarations are correct for overloaded versions of that function to support floating point numbers and string representations of numbers?
 
@@ -821,7 +821,7 @@ complexNumber(float real, float im) {
 }
 ```
 
-#### Q44. What is the result from executing this code snippet?
+#### Q44. What is the result of executing this code snippet?
 
 ```cpp
 bool x=true, y=false;
@@ -863,7 +863,7 @@ for(auto f:values)
 - [ ] `0 2 3 5 10`
 - [x] `1 3 3 5 10`
 
-#### Q47. Which of the following STL classes is the best fit for implementing a phonebook? Suppose each entry contains a name and a phone number, with no duplicates, and you want to have lookup by name.
+#### Q47. Which of the following STL classes is the best fit for implementing a phonebook? Suppose each entry contains a name and a phone number, with no duplicates, and you want to have a lookup by name.
 
 - [ ] `std::priority_queue`
 - [ ] `std::list`
@@ -973,7 +973,7 @@ typedef struct{
 ```
 
 - [ ] Yes, it causes a compiler error because the colon character is not allowed in struct definitions.
-- [x] No, and `child_t` is a type defined as a structure with bit fields. It has 4 bits for age and 1 bit for gender in the first byte, and 2 bits for size in the second byte.
+- [x] No, and `child_t` is a type defined as a structure with bit fields. It has 4 bits for age 1 bit for gender in the first byte, and 2 bits for size in the second byte.
 - [ ] Yes, it causes a compiler error because there is an unnamed field.
 - [ ] Yes, it causes a compiler error because one field is defined as having a size of 0.
 
@@ -1141,7 +1141,7 @@ int calculateMedian(const my_array& a)
 - [ ] Actually, objects cannot be passed as regular variables, because they require a constructor call. Therefore, a `const` reference is the only way to pass class instances to functions.
 - [ ] There are no benefits because a reference and an object are treated as the same thing.
 - [x] The `const` qualifier forbids the code to modify the argument, so the programmer can rest assured that the source object will remain unchanged. / Alt.: The argument is passed as a reference, so if the passed my_array object is large, the program will require less time and memory.
-- [ ] The argument is passed as a reference, so the Function receives a copy that can be modified without affecting the original variable.
+- [ ] The argument is passed as a reference, so the function receives a copy that can be modified without affecting the original variable.
 
 [Reference](https://stackoverflow.com/a/2627179/10773894)
 
@@ -1179,7 +1179,7 @@ int calculateMedian(const my_array& a)
 
 - [ ] to restrict the use of its contents to only one source file
 - [ ] to tell the compiler that only one variable can be instantiated from the classes or types contained in this header file
-- [ ] to help the compiler finish faster by assuring that only one compiler pass is neccessary for the code included in this header file
+- [ ] to help the compiler finish faster by assuring that only one compiler pass is necessary for the code included in this header file
 - [x] to make the compiler parse that header file only once, even if it is included multiple times in the source
 
 [reference here](https://en.cppreference.com/w/cpp/preprocessor/impl)
@@ -1193,7 +1193,7 @@ int calculateMedian(const my_array& a)
 
 [Reference](https://www.educba.com/c-plus-plus-double/)
 
-#### Q68. Other than shifting bits to the left, what is the << operator used for ?
+#### Q68. Other than shifting bits to the left, what is the << operator used for?
 
 - [ ] shifting characters to the left in a string.
 - [x] inserting characters into an output stream like std::cout.
@@ -1202,9 +1202,9 @@ int calculateMedian(const my_array& a)
 
 #### Q69. Which choice is a reason to specify the type of a pointer instead of using `void *`, which works as a pointer to any type?
 
-- [ ] The compiler needs the data type to make sure that the pointer is not going to be used on illegal non-pointable types such as functions, labels, pointers, and reference.
+- [ ] The compiler needs the data type to make sure that the pointer is not going to be used on illegal non-pointable types such as functions, labels, pointers, and references.
 - [ ] `void *` does not work for any type. The language does not allow assigning anything other than `void` to a pointer to `void *`.
-- [x] The compiler needs the data type to know how much memory to allocate for the pointer, because different data types require different pointer lengths.
+- [x] The compiler needs the data type to know how much memory to allocate for the pointer because different data types require different pointer lengths.
 - [ ] Yes, it causes a compiler error because one field is defined as having a size of 0.
 
 [Reference](https://stackoverflow.com/questions/9802585/why-is-the-data-type-needed-in-pointer-declarations)
@@ -1335,35 +1335,35 @@ int main() {
 - [ ] function for a pointer
 - [ ] function for a class
 
-#### Q83. What is a correct syntax to output "Hello World" in C++?
+#### Q83. What is the correct syntax to output "Hello World" in C++?
 
 - [x] cout << "Hello World";
 - [ ] System.out.println("Hello World");
 - [ ] print("Hello World");
 - [ ] Console.WriteLine("Hello World");
 
-#### Q84. How many categories of iterators are there in C++ ?
+#### Q84. How many categories of iterators are there in C++?
 
 - [ ] 4
 - [ ] 3
 - [ ] 7
 - [x] 5
 
-#### Q85. What is the meaning of base class in C++ ?
+#### Q85. What is the meaning of base class in C++?
 
-- [ ] It inherit other class
+- [ ] It inherits other class
 - [ ] It has a pointer variable
 - [ ] It is the first class declared
-- [x] Another class got inherit from this class
+- [x] Another class got inherited from this class
 
-#### Q86. Size of C++ objects are expressed in terms of multiples of the size of a ** and the size of a char is **.
+#### Q86. The size of C++ objects is expressed in terms of multiples of the size of a ** and the size of a char is **.
 
 - [ ] char, 4
 - [ ] float, 8
 - [ ] int, 1
 - [x] char, 1
 
-#### Q87. Implementation dependent aspects about an implementation can be found in
+#### Q87. Implementation-dependent aspects about an implementation can be found in
 
 - [ ] `<numeric>`
 - [ ] `<limit>`
@@ -1373,7 +1373,7 @@ int main() {
 #### Q88. What is a default constructor?
 
 - [x] a constructor that can be used with no arguments
-- [ ] a contructor that does not have a return value
+- [ ] a constructor that does not have a return value
 - [ ] a constructor that is used by multiple classes
 - [ ] a constructor that initializes all members of a class
 
@@ -1386,21 +1386,21 @@ int main() {
 - [ ] Include guards refer to the header file in the file system, not to the code, so they are not helpful if the header file exists
       more than once in a project. This is not a problem with '#pragma once'
 
-#### Q90. Which of the following statement is valid?
+#### Q90. Which of the following statements is valid?
 
-- [ ] We can create new c++ operator.
+- [ ] We can create a new c++ operator.
 - [ ] We can change the precedence of the c++ operator.
 - [x] We can not change the operator templates.
 - [ ] We can change the associativity of the c++ operators.
 
-#### Q91. Which of the followings is/are automatically added to every class, if we do not write our own?
+#### Q91. Which of the following is/are automatically added to every class, if we do not write our own?
 
 - [ ] Copy Constructor
 - [ ] Assignment Operator
 - [ ] A constructor without any parameter
 - [x] All of the above
 
-#### Q92. The if-else statement can be replaced by which operator ?
+#### Q92. The if-else statement can be replaced by which operator?
 
 - [ ] certain structure
 - [ ] choosing structure
@@ -1511,11 +1511,11 @@ int checkConcatThreshold(string a, string b) {
 ```
 
 - [ ] A compilation warning will occur and the second argument will be given a default value of b.
-- [ ] A compilation warning will occur and the second argument will be given a default value of empty string.
+- [ ] A compilation warning will occur and the second argument will be given a default value of the empty string.
 - [x] A compilation error will occur.
 - [ ] No compilation errors will occur and no compilation warnings will occur.
 
-#### Q97. You need to define a C++ lambda function. You want the function to have access to only the variables that are local to it. The function should receive a single parameter, a name, and construct a simple greeting. How will you achieve this?
+#### Q97. You need to define a C++ lambda function. You want the function to have access to only the variables that are local to it. The function should receive a single parameter, and a name, and construct a simple greeting. How will you achieve this?
 
 - [ ] A
 
@@ -1696,16 +1696,16 @@ int main()
 - [ ] 3
 - [ ] 4
 
-#Detailed explanaition:
+#Detailed explanation:
 
-Now here we are suppose to implement stack data structure which follows the **FILO** or (First IN Last Out) principle,
+Now here we are supposed to implement a stack data structure that follows the **FILO** or (First IN Last Out) principle,
 _stack.push()_ -> pushes an element into the from the end array.
 _stack.pop()_ -> removes an element from the end of the array.
 _stack.top()_ -> Just gives us the topmost element of the array.
 Now following the sequences of push and pop: **[1,2,3]** then pop function is used,
-Newly formed array is: **[1,2,4]** then top is used to retrieve topmost element '4' then again pop function is used which removes 4.
-thus, resulting array is: 1,2.
-Then is prints the topmost element (ie: 2).
+A newly formed array is: **[1,2,4]** then the top is used to retrieve the topmost element '4' then again the pop function is used which removes 4.
+thus, the resulting array is: 1,2.
+Then it prints the topmost element (ie: 2).
 
 #### Q105. Which choice is a valid way to overload the ternary conditional operator?
 
@@ -1721,7 +1721,7 @@ Then is prints the topmost element (ie: 2).
 - [ ] In the same program, at different points, a given class derives individually from more than one different class.
 - [ ] A first class derives directly, at the same time, from a second and third class.
 - [x] In the same program, at different points, a given class derives individually from more than two different classes.
-- [ ] A first classderives from a second class, and that second class is already derived from a thrid class
+- [ ] A first classderives from a second class, and that second class is already derived from a third class
 
 #### Q107. Which of the following is the correct syntax to print the message in C++ language?
 
@@ -1854,7 +1854,7 @@ return 0;
 
 [Reference](https://en.cppreference.com/w/cpp/container/vector)
 
-#### Q113. Consider the following code segment. Choose the appropriate option to fill in the blank at LINE-1, such that the output of the code would be: C++ Program.
+#### Q113. Consider the following code segment. Choose the appropriate option to fill in the blank at LINE-1, such that the output of the code would be: a C++ Program.
 
 ```cpp
 #include <iostream>
@@ -2041,7 +2041,7 @@ return 0;
 - [ ] 25
 - [x] Compilation Error: invalid initialization of non-const reference
 
-#Detailed explanaition:
+#Detailed explanation:
 The error is occurring because it is trying to create a reference to a temporary value. In the line int &b = a+1; we are attempting to create a reference b to the result of the expression a + 1, which is a temporary value. References must be bound to an actual object, not a temporary value or an expression that does not have a memory location.
 
 #### Q121. Consider the following code segment. What will be the output?
@@ -2261,7 +2261,7 @@ C c(0);
 
 ```
 
-- [ ] C::a is initialized twice. The first time, it's initialized with 10 and then the second time with 0 in the constructor.
+- [ ] C::a is initialized twice. The first time, it's initialized with 10, and then the second time with 0 in the constructor.
 - [x] C::a is initialized only once with 0 in the constructor.
 - [ ] The code doesn't compile because the compiler cannot decide how to initialize the C::a member.
 - [ ] 2 bytes
@@ -2295,7 +2295,7 @@ User u { "John", 101 };
 - [x] The code compiles starting with C++14 mode.
 - [ ] The code doesn't compile even in C++20.
 
-#### Q137. Assume you have a std::map<string, int> m;. Select the single true statement about the following loop:
+#### Q137. Assume you have a std::map<string, int> m. Select the single true statement about the following loop:
 
 ```cpp
 for (const pair<string, int>& elem : m)
@@ -2325,7 +2325,7 @@ auto x = 4000.22;
 - [ ] Parameterised Constructor
 - [ ] CopyConstructor
 
-#### Q140.Which of the following data type is supported in C++ but not in C?
+#### Q140.Which of the following data types is supported in C++ but not in C?
 
 - [x] bool
 - [ ] int
@@ -2348,7 +2348,7 @@ auto x = 4000.22;
 - [ ] 2
 - [ ] 4
 - [ ] 2 or 4
-- [x] Depends on number of bits in system
+- [x] Depends on the number of bits in the system
 
 #### Q143.Which of the following loops is best when we know the number of iterations?
 
@@ -2371,12 +2371,12 @@ auto x = 4000.22;
 - [ ] Insertion Operator <<
 - [ ] Prefix++
 
-#### Q146.How can we restrict dynamic allocation of objects of a class using new?
+#### Q146.How can we restrict the dynamic allocation of objects of a class using new?
 
 - [ ] By overloading new operator
 - [ ] By making an empty private new operator.
 - [x] By making an empty private new and new[] operators
-- [ ] By overloading new operator and new[] operators
+- [ ] By overloading new operators and new[] operators
 
 #### Q147.What is the time complexity of the below code?
 
